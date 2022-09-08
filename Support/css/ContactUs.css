@@ -1,0 +1,36 @@
+body{
+    background-image: url(../img/backgroundcont.jpg);
+}
+.navbar a{
+    margin: 2rem;
+    color: #573f92 !important;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color:#984550 !important;
+}
+.contactForm .row{
+    margin-top: 1rem !important;
+}
+.contactForm form{
+    width: 60%;
+    height: 35rem;
+    margin: auto;
+    background-image: url(../img/edited.jpg);
+}
+h1 {
+    color: #984550;
+}
+.contact-header{
+    margin-left: 17rem;
+}
+button{
+    background-color: #984550;
+    color: #fffffb;
+    border: none;
+    border-radius: 5%;
+    width: 30%;
+    padding: 1rem;
+    margin-left: 16rem;
+    margin-top: 3rem;
+}

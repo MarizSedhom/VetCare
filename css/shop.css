@@ -1,0 +1,87 @@
+body{
+    background-image: url(../img/background.jpg);
+    color: #573f92;
+}
+.navbar a{
+    margin: 2rem;
+    color: #573f92 !important;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color:#984550 !important;
+}
+.cart a {
+    background-color: #ff8548;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border: solid 1px #ff8548;
+    padding: 0.6rem;
+    margin-left: 3rem;
+}
+.cart a:hover {
+        color: #ff8548;
+        background-color:white;
+    }
+.shopBody a{
+    border: solid 1px #ff8548;
+    color: #ff8548;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+.shopBody a:hover{
+    background-color: #ff8548;
+    color: white;
+}
+.card{
+    margin: 3rem;
+    padding: 1rem;
+}
+.header{
+    width: 100%;
+    background-color: #c8c1e2;
+    color: white;
+    font-size: 14px;
+    padding: 10px 150px;
+    display: grid;
+    grid-template: 50%;
+
+}
+.header ul{
+     list-style: none;
+     padding: 0px 20px;
+     margin: 7px 10px;
+}
+.header li{
+    display: inline;
+    padding: 0px 7px;
+}
+.header-top a{
+    color: #6610f2;
+    text-decoration: none;
+}
+.header-top .dash{
+    padding-left: 2%;
+    color: #c3c1da;
+}
+.social{
+    font-size: 12px;
+    text-align: right;
+}
+.social a{
+    color: white;
+}
+.header a:hover{
+    color:#6610f2;
+    transition: 0.4s;
+}
+.Cart h1 {
+    text-align: center;
+    color: #ff8548;
+}
+.btn {
+    border: 3px solid #E8EBEA;
+    border-radius: 7px
+}

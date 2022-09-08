@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Support.Models.Service>
+@{
+    ViewBag.Title = "Services";
+}
+<link rel="stylesheet" href="~/css/services.css">
+
+<div class="container">
+    <div class="Servicesheader">
+        <div class="row">
+            <div class="col-7">
+                <h1>Our Services</h1>
+                <br>
+                <br>
+                <h3>We are Professionals to care for your pets & giving you peace of mind about your pets</h3>
+                <br>
+                <h6>Get An Appointment</h6>
+                <br>
+                <a href="/Customer/Appointment">Appointment</a>
+            </div>
+            <div class="col-5">
+                <img src="~/img/services.png">
+            </div>
+        </div>
+    </div>
+    <div class="ServicesBody">
+    <div class="row">
+        @foreach (var service in Model)
+        {
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="@service.Icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="@service.PathIcon" />
+                                <path d="@service.PathIcon2" />
+                            </svg> @service.Type
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+    </div>

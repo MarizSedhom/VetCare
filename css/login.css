@@ -1,0 +1,37 @@
+body {
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+}
+
+form{
+    background-image: url(../img/login_form.jpg);
+    background-size: contain;
+    height: 100%;
+    border-radius: 10%;
+    padding: 2rem;
+    padding-bottom: 15rem;
+    color: #984550;
+    width: 30%;
+    margin: auto;
+}
+
+h1 {
+    color: #984550;
+}
+
+button {
+    background-color: #984550;
+   
+    border: none;
+    border-radius: 5%;
+    width: 50%;
+    padding: 0.2rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.btn{
+ color:white;
+}
+a {
+    color: #984550;
+}

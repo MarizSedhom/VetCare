@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<link rel="stylesheet" href="~/css/ContactUs.css">
+<div class="container">
+    <div class="contact-header">
+        <h1>Get In Touch</h1>
+        <br>
+        <p>If you have an idea, we would love to hear about it.</p>
+    </div>
+    <div class="contactForm">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <textarea name="comments" class="form-control" id="message" cols="30" rows="6" required="" data-error="Write your message" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <button type="submit">Send Message</button>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model Support.ViewModels.AppointmentViewModel
+@{
+    ViewBag.Title = "Appointment";
+}
+<link rel="stylesheet" href="~/css/ContactUs.css">
+<div class="container">
+    <div class="contact-header">
+        <h1>Appointment</h1>
+        <br />
+    </div>
+
+    @using (Html.BeginForm("Save", "Customer"))
+    {
+        <div class="row">
+            <div class="col-md-6" class="form-group">
+                @Html.LabelFor(m => m.Pet.Customers.Name)
+                @Html.TextBoxFor(m => m.Pet.Customers.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Pet.Customers.Name)
+            </div>
+            <div class="col-md-6" class="form-group">
+                @Html.LabelFor(m => m.Pet.Name)
+                @Html.TextBoxFor(m => m.Pet.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Pet.Name)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" class="form-group">
+                @Html.LabelFor(m => m.Pet.Type)
+                @Html.TextBoxFor(m => m.Pet.Type, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Pet.Type)
+            </div>
+            <div class="col-md-6" class="form-group">
+                @Html.LabelFor(m => m.Pet.Age)
+                @Html.TextBoxFor(m => m.Pet.Age, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Pet.Age)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Pet.DoctorId)
+            @Html.DropDownListFor(m => m.Pet.DoctorId, new SelectList(Model.Doctors, "Id", "Name"), "Select Doctor", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Pet.DoctorId)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Pet.ServicesId)
+            @Html.DropDownListFor(m => m.Pet.ServicesId, new SelectList(Model.Services, "Id", "Type"), "Select Service", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Pet.ServicesId)
+        </div>
+        @Html.HiddenFor(m => m.Pet.Id)
+        <button type="submit">Save</button>
+    }
+
+</div>

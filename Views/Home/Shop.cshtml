@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Support.Models.Shopping>
+@{
+    ViewBag.Title = "Shop";
+}
+
+<link rel="stylesheet" href="~/css/shop.css">
+
+<div class="container">
+    
+    <div class="shopBody">
+
+        <div class="row">
+            @foreach (var shop in Model)
+            {
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="~/img/@shop.Icon" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">@shop.Description</p>
+                            <h5>@shop.Price EGP</h5>
+                            <br>
+                            
+                       <a href="/Customer/Cart/@shop.Id">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
